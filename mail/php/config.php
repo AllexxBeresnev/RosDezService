@@ -31,7 +31,7 @@
 
 	// *** SMTP *** //
 
-		require_once($_SERVER['DOCUMENT_ROOT'] . '/berdsk/mail/phpmailer/smtp.php');
+		require_once($_SERVER['DOCUMENT_ROOT'] . '/tomsk/mail/phpmailer/smtp.php');
 		const HOST = 'ssl://smtp.yandex.ru';
 		const LOGIN = 'rosdezexpert-berdsk@yandex.ru';
 		const PASS = 'Master123';
