@@ -1,0 +1,33 @@
+.obrab
+    &__wrap 
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+        flex-wrap: wrap
+    &__img
+        margin-bottom: 15px
+        width: 230px
+        height: 175px
+        overflow:hidden
+
+    &__img img
+        border: 5px solid #FFF
+        border-radius: 10px
+        box-shadow: 2px 3px 8px -2px
+        transition: all .5s ease
+        -webkit-filter: grayscale(0%)
+        filter: grayscale(0%)
+    &__img img:hover
+        border: 5px solid #c4bebe
+        -webkit-filter: grayscale(99%)
+          filter: grayscale(99%)
+
+    &__item
+        margin-top: 2em
+        margin-right: 1.5em
+
+    &__descr
+        text-align: center
+        color: $main-color
+        font-size: 1em
+        padding-bottom: 15px

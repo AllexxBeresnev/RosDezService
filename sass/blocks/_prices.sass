@@ -1,0 +1,150 @@
+.prices
+    &__hr
+        width: 90%
+        height: 3px
+        background: $main-color
+        margin-bottom: 20px
+        margin-top: 20px
+    &__tabs
+        max-width: 90%
+        float: none
+        list-style: none
+        padding: 0
+        margin: 15px auto
+        border-bottom: 3px solid $main-color
+    &__tabs:after 
+        content: ''
+        display: table
+        clear: both
+    &__tabs input[type=radio] 
+        display: none
+    &__tabs label p 
+        padding: 5px
+        margin-right: 0
+    &__tabs label 
+        display: block
+        float: left
+        width: 25%
+        color: $main-color
+        font-size: 0.9em
+        font-weight: bold
+        text-decoration: none
+        text-align: center
+        line-height: 1
+        cursor: pointer
+        box-shadow: inset 0 4px #ccc
+        border-bottom: 4px solid #ccc
+        -webkit-transition: all 0.5s
+        transition: all 0.5s
+    &__tabs label span 
+        display: none
+    &__tabs label:hover 
+        color: $second-color
+        box-shadow: inset 0 4px $main-color
+        border-bottom: 4px solid $main-color
+    &__content 
+        display: none
+        width: 100%
+        height: 20.5em
+        float: left
+        padding: 15px
+        box-sizing: border-box
+        background-color: #ffffff
+        font-size: 0.9em
+    &__description
+        font-style: italic
+    &__flat p 
+        text-align: center
+        margin: 15px 0
+    &__house p 
+        text-align: center
+        margin: 10px 0
+    &__land p 
+        text-align: center
+        margin: 5px 0
+    &__ul 
+        text-align: center
+    &__table-ul
+        box-sizing: border-box
+        border-spacing: 2px
+        margin: auto
+        border-collapse: collapse
+        border-spacing: 0
+        & th 
+            font-size: 17px
+            font-weight: normal
+            padding: 11px 20px
+            border-style: solid
+            border-width: 0px
+            overflow: hidden
+            word-break: normal
+            border-color: black
+        & td 
+            margin-top: 10px
+    &__tabs [id^="tab"]:checked + label
+            background: $main-color
+            color: $lightText-color
+            box-shadow: inset 0 4px $main-color
+            text-shadow: 0px 3px 3px rgba(26, 26, 26, 0.75)
+            border-bottom: 4px solid $main-color
+    &__form
+        margin-top: 20px
+        width: 250px
+        height: 250px
+        box-shadow: none
+        background-color: $mainBg-color
+    &__btn
+        display: inline-block
+        outline: none
+        -webkit-appearance: none
+        cursor: pointer
+        text-align: center
+        text-transform: uppercase
+        color: $lightText-color
+        line-height: 34px
+        font-size: 0.7em
+        border: none
+        border-radius: 4px
+        padding: 0 12px
+        height: 44px
+        text-transform: uppercase
+        vertical-align: top
+        font-weight: bold
+        background: red
+        box-shadow: 7px 7px 5px rgba(0,0,0,0.6)
+        
+
+
+#tab-first:checked ~ #tab-content-1,
+#tab-second:checked ~ #tab-content-2,
+#tab-fird:checked ~ #tab-content-3,
+#tab-fourth:checked ~ #tab-content-4
+    display: block
+
+.sales 
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    justify-content: space-evenly
+    &__sosed p
+        text-align: center
+    &__sosed hr 
+        background-color: $main-color
+    &__title
+        text-align: left
+        font-size: 1.5em
+        color: $main-color
+        font-weight: bold
+    &__description
+        text-align: center
+        margin-right: 20px
+        font-size: 0.9em
+    &__per
+        display:inline-block
+        font-size: 1.5em
+        font-weight: bold
+        color: red
+
+
+
+

@@ -1,0 +1,34 @@
+.contacts
+    background-color: $lightText-color
+    &__wrap 
+        display: flex
+        align-items: center
+        flex-wrap: wrap 
+        justify-content: space-between
+    &__text
+        width: 61%
+        padding-right: 29px
+        padding-top: 20px  
+        padding-left: 10px
+    &__text p 
+        line-height: 1.3em
+        font-size: 0.9rem
+    &__phone, &__adres
+
+        color: $main-color
+        font-weight: bold
+    &__form
+        padding-right: 40px
+        
+        &-noborder
+            box-shadow: none
+            height: 150px
+            width: 210px
+            border: none
+            background-color: $lightText-color
+
+
+.contact-form__input-noborder
+    border: none
+    border-bottom: 1px solid $main-color
+    background-color: $lightText-color

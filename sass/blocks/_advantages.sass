@@ -1,0 +1,43 @@
+.adv
+    &__wrap 
+        margin-top: 40px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: top
+        box-sizing: border-box
+    &__img 
+        height: 150px
+        margin-bottom: 20px
+    &__block
+        text-align: center
+        min-width: 250px
+        flex: 1 
+    &__title
+        margin-bottom: 20px
+        font-size: 1.3em
+        color: $main-color
+    &__desc
+        padding: 0 10px 10px 10px
+        font-size: 0.9em
+
+
+.rotate
+    -webkit-transition-duration: 0.8s
+    -moz-transition-duration: 0.8s
+    -o-transition-duration: 0.8s
+    transition-duration: 0.8s
+    -webkit-transition-property: -webkit-transform
+    -moz-transition-property: -moz-transform
+    -o-transition-property: -o-transform
+    transition-property: transform
+    overflow: hidden
+
+.rotate:hover
+    cursor: pointer
+    -webkit-transform: rotate(360deg)
+    -moz-transform: rotate(360deg)
+    -o-transform: rotate(360deg)
+
+
+
