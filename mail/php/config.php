@@ -33,20 +33,20 @@
 
 		require_once($_SERVER['DOCUMENT_ROOT'] . '/tomsk/mail/phpmailer/smtp.php');
 		const HOST = 'ssl://smtp.yandex.ru';
-		const LOGIN = 'rosdezexpert-berdsk@yandex.ru';
-		const PASS = 'Master123';
+		const LOGIN = 'rosdezservice-zayavka@yandex.ru';
+		const PASS = 'AlexMaster123';
 		const PORT = '465';
 
 	// *** /SMTP *** //
 
   // Почта с которой будет приходить письмо
-	const SENDER = 'rosdezexpert-berdsk@yandex.ru';
+	const SENDER = 'rosdezservice-zayavka@yandex.ru';
 	
 	// Почта на которую будет приходить письмо
-	const CATCHER = 'rosdezexpert-berdsk@yandex.ru';
+	const CATCHER = 'rosdezservice-zayavka@yandex.ru';
 	
 	// Тема письма
-	const SUBJECT = 'Заявка с сайта Бердск РосДэзЭксперт';
+	const SUBJECT = 'Заявка с сайта Томск  РосДэзСервис';
 	
 	// Кодировка
   const CHARSET = 'UTF-8';
