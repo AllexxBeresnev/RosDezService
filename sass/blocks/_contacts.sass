@@ -5,6 +5,7 @@
         align-items: center
         flex-wrap: wrap 
         justify-content: space-between
+        margin-left: 1em
     &__text
         width: 61%
         padding-right: 29px
@@ -14,9 +15,26 @@
         line-height: 1.3em
         font-size: 0.9rem
     &__phone, &__adres
-
+        display: inline-block
         color: $main-color
         font-weight: bold
+    &__mobile
+        display: none
+        text-align: center
+        margin-top: 2em
+        margin-bottom: 2em
+    &__watsapp
+        margin-top: 2em
+        color: #ffffff
+        font-weight: bold
+        text-align: center
+        background: #0baf0b
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6)
+        padding: 0.6em 1em
+        border-radius: 2em
+        transition: all 0.6s ease-in-out
+    &__watsapp:hover
+        background: #247c2b
     &__form
         padding-right: 40px
         

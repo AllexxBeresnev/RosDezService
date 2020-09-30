@@ -11,7 +11,7 @@
   .hero__man-img 
     position: absolute
     bottom: 0px
-    left: 60%
+    left: 55%
     height: 50%
   .aboutus__left img
     width: 100%    
@@ -39,10 +39,22 @@
   
   .hero__man-img
     position: absolute
-    overflow: hidden
     bottom: 0px
-    left: 50%
+    left: 60%
     height: 45%
+  .footer__phone 
+    font-size: 1.2em
+  .footer__left
+    width: 40%
+  .footer__center
+    width: 50%
+    order: 3
+    margin: 0 auto
+  .footer__right
+    margin-right: 1em
+    text-align: right
+    width: 40%
+
 
 
 @media (max-width: 760px) 
@@ -60,7 +72,7 @@
     flex-wrap: wrap
     flex-direction: column
     justify-content: space-between
-    padding: 1em 1em
+    padding: 1.5em 1em
     overflow: hidden
     width: 100%
   .hero__contact-form 
@@ -144,7 +156,7 @@
   .menu__list-active
     left: 0
   .accordion 
-    width: 100%
+    width: 80%
   .contacts__text
     width: 90%
     padding-right: 10px
@@ -155,6 +167,8 @@
   .contacts__text p 
     line-height: 1.3em
     text-align: center
+  .contacts__mobile
+    display: block
   .contacts__form
     margin: 20px auto
     padding-right: 0
@@ -162,7 +176,9 @@
     text-align: center
     font-size: 1.2em
     margin-top: 16px
-
+  .footer__right
+    width: 50%
+  
 @media (max-width: 660px) 
   .footer__left,.footer__center,.footer__right
     width: 90%
@@ -176,6 +192,9 @@
     margin: 0 auto
     margin-bottom: 20px
     margin-top: 30px  
+  .shema__desc
+    display: block
+    margin: 0 auto
   .hero__contact-form
     margin-top: 120px
     margin : 0 auto
@@ -198,6 +217,8 @@
     margin: 0 auto
   .up_down_btn 
     right: 20px
+  .footer__desc
+    display: none
   
 
 @media (max-width: 500px) 
@@ -211,7 +232,8 @@
   .hamburger
     right: 40px
     top: 30px
-  
+  .faq
+    display: none  
 
 @media (max-width: 450px) 
   .noshow-mobile
@@ -244,7 +266,13 @@
     margin-top: 80px
     width: 270px 
     height: 240px
-  
+  .services
+    &__card-img
+      text-align: center
+    &__card-img img
+        position:relative
+        width: 80%
+        margin: 0 auto
   .prices__content 
     padding: 5px
   

@@ -106,7 +106,7 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0.5em 1em;
+  padding: 1em 1em;
   overflow: hidden;
   position: fixed;
   width: 100%;
@@ -152,6 +152,7 @@ h1 {
   color: rgba(53, 218, 32, 0.931);
   font-weight: 800;
   font-size: 1.4em;
+  text-transform: uppercase;
 }
 
 .top-slogan__description {
@@ -183,10 +184,6 @@ h1 {
 .menu__item {
   list-style: none;
   padding-left: 20px;
-}
-
-.menu__item:nth-child(1) {
-  padding-left: 0px;
 }
 
 .menu__link {
@@ -517,16 +514,18 @@ h1 {
   text-align: center;
   font-size: 1.2em;
   font-weight: bold;
-  color: #0baf0b;
+  color: #db20d2;
   text-transform: uppercase;
 }
 
 .dez__text {
   width: 65%;
+  color: #db20d2;
   margin: 0 auto;
   text-align: center;
+  line-height: 1.3em;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-sizing-box-sizing: border-box;
   font-size: 0.9em;
   font-weight: 600;
 }
@@ -568,8 +567,11 @@ h1 {
 }
 
 .adv__desc {
-  padding: 0 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
   font-size: 0.9em;
+  margin-left: 1em;
+  margin-right: 1em;
+  width: 90%;
 }
 
 .rotate {
@@ -668,17 +670,17 @@ h1 {
 
 .prices__flat p {
   text-align: center;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 .prices__house p {
   text-align: center;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .prices__land p {
   text-align: center;
-  margin: 5px 0;
+  margin: 0;
 }
 
 .prices__ul {
@@ -836,7 +838,8 @@ h1 {
 
 .obrab__item {
   margin-top: 2em;
-  margin-right: 1.5em;
+  margin-right: 1em;
+  margin-left: 1em;
 }
 
 .obrab__descr {
@@ -884,11 +887,13 @@ h1 {
 
 .shema__desc {
   display: inline-block;
+  margin: 0 auto;
   width: 75%;
   vertical-align: middle;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-left: 20px;
+  padding-left: 1em;
+  padding-right: 1em;
   font-size: 0.9em;
 }
 
@@ -1030,6 +1035,10 @@ h1 {
   border-width: 1px;
   border-style: solid;
   border-color: #0baf0b;
+}
+
+.accordion {
+  width: 80%;
 }
 
 .heading-primary {
@@ -1216,6 +1225,7 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-left: 1em;
 }
 
 .contacts__text {
@@ -1231,8 +1241,34 @@ h1 {
 }
 
 .contacts__phone, .contacts__adres {
+  display: inline-block;
   color: #0baf0b;
   font-weight: bold;
+}
+
+.contacts__mobile {
+  display: none;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.contacts__watsapp {
+  margin-top: 2em;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  background: #0baf0b;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+  padding: 0.6em 1em;
+  border-radius: 2em;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.contacts__watsapp:hover {
+  background: #247c2b;
 }
 
 .contacts__form {
@@ -1277,10 +1313,14 @@ footer {
 
 .footer__left {
   padding-left: 20px;
+  width: 30%;
 }
 
 .footer__right {
   padding-right: 20px;
+  text-align: right;
+  margin: 0 auto;
+  width: 30%;
 }
 
 .footer__center {
@@ -1295,7 +1335,7 @@ footer {
 }
 
 .footer__mobile-phone {
-  font-size: 1em;
+  font-size: 1.2em;
   display: inline-block;
   text-decoration: none;
   font-weight: 700;
@@ -1303,6 +1343,8 @@ footer {
   background: rgba(13, 216, 40, 0.3);
   border-radius: 18px;
   padding: 10px 15px;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
 }
 
 .footer__logo {
@@ -1321,7 +1363,7 @@ footer {
 
 .footer__phrase {
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 .footer__desc {
@@ -1348,7 +1390,7 @@ footer {
   .hero__man-img {
     position: absolute;
     bottom: 0px;
-    left: 60%;
+    left: 55%;
     height: 50%;
   }
   .aboutus__left img {
@@ -1381,10 +1423,27 @@ footer {
   }
   .hero__man-img {
     position: absolute;
-    overflow: hidden;
     bottom: 0px;
-    left: 50%;
+    left: 60%;
     height: 45%;
+  }
+  .footer__phone {
+    font-size: 1.2em;
+  }
+  .footer__left {
+    width: 40%;
+  }
+  .footer__center {
+    width: 50%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 0 auto;
+  }
+  .footer__right {
+    margin-right: 1em;
+    text-align: right;
+    width: 40%;
   }
 }
 
@@ -1416,7 +1475,7 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 1em 1em;
+    padding: 1.5em 1em;
     overflow: hidden;
     width: 100%;
   }
@@ -1517,7 +1576,7 @@ footer {
     left: 0;
   }
   .accordion {
-    width: 100%;
+    width: 80%;
   }
   .contacts__text {
     width: 90%;
@@ -1531,6 +1590,9 @@ footer {
     line-height: 1.3em;
     text-align: center;
   }
+  .contacts__mobile {
+    display: block;
+  }
   .contacts__form {
     margin: 20px auto;
     padding-right: 0;
@@ -1539,6 +1601,9 @@ footer {
     text-align: center;
     font-size: 1.2em;
     margin-top: 16px;
+  }
+  .footer__right {
+    width: 50%;
   }
 }
 
@@ -1557,6 +1622,10 @@ footer {
     margin: 0 auto;
     margin-bottom: 20px;
     margin-top: 30px;
+  }
+  .shema__desc {
+    display: block;
+    margin: 0 auto;
   }
   .hero__contact-form {
     margin-top: 120px;
@@ -1586,6 +1655,9 @@ footer {
   .up_down_btn {
     right: 20px;
   }
+  .footer__desc {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1601,6 +1673,9 @@ footer {
   .hamburger {
     right: 40px;
     top: 30px;
+  }
+  .faq {
+    display: none;
   }
 }
 
@@ -1640,6 +1715,13 @@ footer {
     margin-top: 80px;
     width: 270px;
     height: 240px;
+  }
+  .services__card-img {
+    text-align: center;
+  }
+  .services__card-img img {
+    width: 80%;
+    margin: 0 auto;
   }
   .prices__content {
     padding: 5px;
